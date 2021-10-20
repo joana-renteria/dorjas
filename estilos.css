@@ -1,12 +1,24 @@
+body, ul{
+	margin: 0;
+	padding: 0;
+}
+
 header div {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	background-color: black;
-	text-align: center;
+	text-align: left;
+	font-family: Segoe ui;
 }
+
+header img {
+	vertical-align: bottom;
+}
+
 header li {
-	display: inline;				
+	display: inline;	
+	font-size: 30px;
 }
 header li a {
 	display: inline-block;
@@ -38,5 +50,4 @@ header .dropdown-content a:hover {
 }
 header .dropdown:hover .dropdown-content {
 	display: block;
-}			
-			
+}		
