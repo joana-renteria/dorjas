@@ -3,17 +3,16 @@ body, ul{
 	padding: 0;
 }
 
-header div {
+header {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background-color: black;
-	text-align: left;
+	background-color: black;	
 	font-family: Segoe ui;
 }
 
 header img {
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 header li {
@@ -50,4 +49,31 @@ header .dropdown-content a:hover {
 }
 header .dropdown:hover .dropdown-content {
 	display: block;
-}		
+}			
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input,label {
+    margin: .4rem 0;
+}
+div.right{
+	float:right;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;	
+	font-family: Segoe ui; 
+	display: inline;
+	height:100px;
+	
+}
+div.left{
+	float:left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: black;	
+	font-family: Segoe ui;
+	display: inline;
+}
