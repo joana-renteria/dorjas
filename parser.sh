@@ -14,17 +14,23 @@ do
 	anterior=i-1
 	lista_siguiente=$(sed -n "${siguiente}p" arti | grep "\-\-")
 	lista_anterior=$(sed -n "${anterior}p" arti | grep "\-\-")
-	if [ lista_siguiente -n ] then
-		if [ lista_anterior -n ] then
-			echo "<ul>" >> output.html
-		fi
-		echo "<li>" >> output.html
-		sed -n "${i}p" arti | sed -s "s/\-\-//"
-		echo "</li>" >> output.html
-		if [ lista_siguiente -n ] then
-			echo "</ul>" >> output.html
-		fi
-	fi
+	#if [ -n lista_siguiente ]
+	#then
+	#	if [ -n lista_anterior ]
+	#	then
+	#		echo "<ul>" >> output.html
+	#	fi
+	#	echo "<li>" >> output.html
+	#	sed -n "${i}p" arti | sed -s "s/\-\-//"
+	#	echo "</li>" >> output.html
+	#	if [ -n lista_siguiente ]
+	#	then
+	#		echo "</ul>" >> output.html
+	#	fi
+	#fi
+
+	
+	
 	echo "<p>" >> output.html
 	sed -n "${i}p" arti >> output.html
 	echo "</p>" >> output.html
