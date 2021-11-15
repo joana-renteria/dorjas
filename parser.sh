@@ -8,39 +8,42 @@ echo $lineas
 
 cat plantilla_begin.html > output.html
 
-for (( i = 1; i <= $lineas; i++ ))
-do
-	siguiente=i+1
-	anterior=i-1
-	lista_siguiente=$(sed -n "${siguiente}p" arti | grep "\-\-")
-	lista_anterior=$(sed -n "${anterior}p" arti | grep "\-\-")
-	#if [ -n lista_siguiente ]
-	#then
-	#	if [ -n lista_anterior ]
-	#	then
-	#		echo "<ul>" >> output.html
-	#	fi
-	#	echo "<li>" >> output.html
-	#	sed -n "${i}p" arti | sed -s "s/\-\-//"
-	#	echo "</li>" >> output.html
-	#	if [ -n lista_siguiente ]
-	#	then
-	#		echo "</ul>" >> output.html
-	#	fi
-	#fi
+for f in ./*.txt; do
+	cat plantilla_begin.html > output/"$f".html
+	cat plantilla_end.html >> output/"$f".html
 
+	for (( i = 1; i <= $lineas; i++ ))
+	do
+		siguiente=i+1
+		anterior=i-1
+		lista_siguiente=$(sed -n "${siguiente}p" arti | grep "\-\-")
+		lista_anterior=$(sed -n "${anterior}p" arti | grep "\-\-")
 	
+		headr=$(sed -n "${i}p" arti | grep "#[a-z]*#")
+		headrs=$(sed -n "${i}p" arti | grep "##[a-z]*##")
 	
-	echo "<p>" >> output.html
-	sed -n "${i}p" arti >> output.html
-	echo "</p>" >> output.html
+		echo $i
+	
+		if [ ${#headr} -g 0 ]
+		then
+			echo ${#headr}
+			if [ ${#headrs} -g 0 ]
+			then
+				echo $headrs
+				echo "<h2>" >> output.html
+				sed -n "${i}p" arti | sed -s "s/##//" >> output.html
+				echo "</h2>" >> output.html
+			else
+				echo "c"
+				echo "<h1>" >> output.html
+				sed -n "${i}p" arti | sed -s "s/#//" >> output.html
+				echo "</h1>" >> output.html
+			fi
+		else
+			echo "d"
+			echo "<p>" >> output.html
+			sed -n "${i}p" arti >> output.html
+			echo "</p>" >> output.html
+		fi
+	done
 done
-
-cat plantilla_end.html >> output.html
-
-
-#while IFS= read -r line;
-#do
-#	printf '%s\n' "$line"
-#	printf 'a'
-#done < arti
