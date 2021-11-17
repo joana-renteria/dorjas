@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Cocaina</title>
+  <link rel="stylesheet" type="text/css" href="css/cocaina.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>	
+		<div class="cont">
+			<div class="head">
+			<ul>
+				<li><a class="pad" href="index.html"><img src="img/logo.jpg" width="140" alt="logo"></a></li>
+				<li><a href="#news">Otro enlace</a></li>
+				<li class="dropdown"><a href="#news">Articulos</a>
+					<div class="dropdown-content">
+							<a href="#">Drogas</a>
+							<a href="#">Cultura</a>
+					</div>
+				</li>
+				<li><a href="">Quienes somos</a></li>
+			</ul>
+			</div>
+			<div class="right" >
+					<input type="search" id="site-search" name="q">
+					<button>Search</button>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="cont1">
+			<div class="sticky">
+				<ul class="index">
+					<a href="#descripcion"><li>Descripcion</li></a><br/>
+					<a href="#efectos"><li>Efectos deseados</li></a><br/>
+					<a href="#duracion"><li>Duracion</li></a><br/>
+					<a href="#riesgos"><li>Riesgos</li></a><br/>
+					<a href="#reduccion"><li>Reduccion de riesgos</li></a><br/>
+					<a href="#legislacion"><li>Legislación</li></a>
+				</ul>
+			</div>
+			<div class="cont">
+				<h1>Alcohol</h1><br/>
+				<h2>Sustancias Principales</h2><br/><br/><br/>
+				<img src="img/Alcohol.jpg"><br/><br/>
+				<h3 id="descripcion">Descripcion de alcohol</h3>
+				
+</p>
+<p>
+El alcohol es un líquido incoloro, de olor característico, soluble tanto en agua como en grasas; se caracteriza por ser una sustancia psicoactiva, depresora del sistema nervioso central, y con capacidad de causar dependencia.
+</p>
+<p>
+Se calcula que 1 gramo de alcohol aporta al organismo 7,1 Kcal.; este aporte energético no se acompaña de un aporte nutritivo como minerales, proteínas o vitaminas.
+</p>
+<p>
+El alcohol se ha utilizado ampliamente en muchas culturas durante siglos y en nuestro país su consumo forma parte de nuestros usos y costumbres: es nuestra droga cultural por excelencia, hasta el punto de que el hecho de beber es considerado normal ya que tres cuartas partes de la población española beben de manera esporádica o habitual. Sin embargo, actualmente se está tomando conciencia de que el alcohol es una droga más y de que su consumo no es en absoluto inocuo.
+</p>
+<p>
+De hecho, el consumo de alcohol es uno de los principales factores que se relacionan con la salud de los individuos y de las poblaciones, ya que las consecuencias de su consumo abusivo tienen un gran impacto en términos de salud y en términos sociales.
+</p>
+<p>
+
+</p>
+<p>
+
+</p>
+<p>
+Se entiende por bebida alcohólica aquella bebida en cuya composición está presente el etanol en forma natural o adquirida, y cuya concentración sea igual o superior al 1 por ciento de su volumen y que tiene diferente concentración dependiendo de su proceso de elaboración.
+</p>
+<p>
+Existen dos tipos de bebidas alcohólicas: las fermentadas y las destiladas.
+</p>
+<p>
+Las bebidas fermentadas son las procedentes de frutas o de cereales que, por acción de ciertas sustancias microscópicas (levaduras), el azúcar que contienen se convierte en alcohol.
+</p>
+<p>
+Las bebidas fermentadas más comunes son el vino, la cerveza y la sidra.
+</p>
+<ul>
+<li>
+El vino es el producto resultante de la fermentación de las uvas frescas o del mosto. Su contenido alcohólico suele oscilar entre los 10 y los 13 grados.
+</li>
+<li>
+La cerveza se obtiene a partir de la malta cervecera, procedente de la transformación de la cebada y otros cereales. Para conseguir el sabor amargo se le añade lúpulo. Su contenido de alcohol suele oscilar entre los 4-6 grados.
+</li>
+<li>
+La sidra, procede de las manzanas trituradas y fermentadas. Su contenido en alcohol suele alcanzar los 5 grados.
+</li>
+</ul>
+<p>
+Las bebidas destiladas se consiguen eliminando mediante calor, a través de la destilación, una parte del agua contenida en las bebidas fermentadas.
+</p>
+<p>
+El principio básico de esta acción reside en que el alcohol se evapora a 78 grados y el agua a 100 grados, por consiguiente tienen más alcohol que las bebidas fermentadas, alcanzando los 30-50 grados.
+</p>
+<p>
+Entre las bebidas destiladas más conocidas se encuentran:
+</p>
+<ul>
+<li>
+El coñac o brandy, que deriva de destilados del vino criados en vasijas de roble.
+</li>
+<li>
+La ginebra, que resulta de la destilación de macerados de bayas de enebro y otros cereales.
+</li>
+<li>
+El whisky, que se origina de mezcla de cereales (cebada, maíz, centeno).
+</li>
+<li>
+El ron, que se obtiene de la destilación de la melaza fermentada de la caña de azúcar o de remolacha.
+</li>
+<li>
+El vodka, que se obtiene de varios cereales, generalmente centeno y también de la patata.
+</li>
+</ul>
+<p>
+				
+<h3>Dosis del alcohol</h3>
+<p>Diferentes tipos de bebidas alcohólicas contienen diferentes cantidades de alcohol.</p>
+<p>Así, por ejemplo, mientras una caña de cerveza suele contener unos 5 gramos de alcohol puro, un cubata con 50 mililitros de bebida destilada puede llegar a tener unos 15 gramos.</p>
+<p>Según la Organización Mundial de la Salud, un consumo de riesgo sería el consumo regular de más de 20 gramos diarios de alcohol en mujeres y de más de 40 gramos diarios de alcohol en hombres.</p>
+<p>No obstante, estas cantidades son orientativas ya que el alcohol puede producir daños dependiendo de multitud de factores:</p>
+<p>sexo, edad, peso, estado físico, estado psicológico, tipo de alcohol consumido, situación en la que se consume, etc.</p>
+<p>Como norma general, cuanto más alcohol haya en el cuerpo, más rápido aparecerán los efectos depresores en el sistema nervioso central.</p>
+<p>A este respecto, debe tenerse en cuenta que, por término medio, una persona adulta sana elimina a través del hígado aproximadamente unos 8-10 gramos de alcohol por hora,</p>
+<p>por lo que cualquier consumo que exceda ese ritmo aumentará la presencia de alcohol en sangre y, con niveles altos, se aumenta el riesgo de una intoxicación.</p>
+
+<h3>Efectos adversos frecuentes</h3>
+<p>Una de las principales consecuencias negativas asociadas al consumo de alcohol es la resaca,</p>
+<p>Una de las principales consecuencias negativas asociadas al consumo de alcohol es la resaca,</p>
+<p>que se produce cuando se ha bebido más de la cuenta y se manifiesta con diferentes síntomas:</p>
+<p>cansancio, dolor de cabeza, vértigos, mayor sensibilidad a la luz y a los ruidos, ojos enrojecidos, dolores musculares y sed.</p>
+<p>También es frecuente sentir náuseas, vómitos y dolor de estómago. A veces también se pueden sentir taquicardias, ligeros temblores y un aumento en la sudoración.</p>
+<p>En esos momentos es difícil concentrarse y prestar atención a las cosas. Se puede sentir decaimiento y, a veces, un poco de ansiedad e irritabilidad.</p>
+<p>La resaca no reviste gravedad desde el punto de vista médico pero es muy desagradable y, en ocasiones,</p>
+<p>hasta incapacitante pues puede llegar a afectar bastante si se tiene que trabajar, ir a clase, estudiar o hacer cualquier actividad que</p>
+<p>requiera concentración.Tanto los síntomas de la resaca como su intensidad pueden variar de una persona a otra e, incluso, para una misma persona, en momentos o situaciones diferentes.</p>
+<p>En general, la resaca comienza varias horas después de la última copa, momento en que los niveles de alcohol en la sangre comienzan a bajar y pueden alargarse más allá de las 24 horas siguientes</p>
+				
+<h3>Efectos tóxicos/graves/infrecuentes</h3>
+<p>La intoxicación etílica es una consecuencia negativa frecuente y potencialmente muy grave entre personas que salen y beben.</p>
+<p>Los efectos negativos del alcohol son mayores cuanto mayor es la cantidad de alcohol que circula por la sangre.</p>
+<p>Cuando esa cantidad supera un determinado umbral (que es variable en función de cada persona y cada momento), el organismo comienza a dejar de funcionar (la persona se vuelve más lenta,</p>
+<p>le resulta más difícil poder hablar y pensar, le entra sueño, etc.) y eso puede llevar a situaciones de gran riesgo (caídas, accidentes, desmayos, coma y, en casos muy graves, la muerte).</p>
+<p>El uso frecuente y continuado de alcohol se asocia a un gran número de complicaciones a nivel físico: carencias vitamínicas, daño en el hígado que puede llegar a ser irreversible (cirrosis),</p>
+<p>úlceras de estómago, pancreatitis aguda, etc.</p>
+
+<p>Además, el alcohol es una droga altamente adictiva.</p>
+<p>Los problemas de alcohol, a veces, son difíciles de reconocer, por la elevada tolerancia y normalización social en comparación con otras drogas.</p>
+<p>Algunas personas desarrollan una dependencia al alcohol y necesitan beber alcohol todos los días. El síndrome de abstinencia al alcohol puede llegar a ser mortal.</p>			
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</article>
+</body>
