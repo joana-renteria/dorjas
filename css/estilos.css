@@ -3,21 +3,29 @@ body, ul{
 	padding: 0;
 	font-family: Segoe ui;
 }
-
+div.cont {
+	margin: 0 auto;
+	display: flex;
+	width: 76%;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+/*---HEADER---*/
 header {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	background-color: black;	
-	display: inline-block;
-	float: left;
+	display: flex;
 	width: 100%;
 }
-
 header img {
 	vertical-align: middle;
 }
-
+header a.none{
+	color: black;
+	padding: 0px;
+}
 header li {
 	display: inline;	
 	font-size: 30px;
@@ -60,10 +68,9 @@ label {
 input,label {
     margin: .4rem 0;
 }
-div div.right{
+div.right{
 	float: right;
 	margin: 20px;
-	vertical-align: middle;
 }
 div.head{
 	list-style-type: none;
@@ -71,16 +78,21 @@ div.head{
 	padding: 0;
 	background-color: black;	
 	font-family: Segoe ui;
+	width: 80%;
 }
+/*---ARTICLE---*/
 article div.cont {
 	margin: 0 auto;
-	border: 2px solid white;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: space-between;
 	width: 46%;
 	padding: 10px;
 	justify-content: center;
+}
+article iframe{
+	width: 250vw;
+	height: 40vw;
 }
 article div.div2 {
 	margin: 0 auto;
@@ -108,7 +120,7 @@ article div.cont div h1{
     font-weight: 800;
     font-style: normal;
 }
-article div.cont div h1:hover{
+article div.cont div:hover h1{
 	background-color: #f8dc22;
 	color: black;
 	box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
@@ -136,4 +148,33 @@ a.button:hover{
 	background-color: black;
 	color: white;
 	transition: background-color .3s;
+}
+/*---FOOTER---*/
+footer {
+	background-color: #f8dc22;
+    color: #000;
+    padding: 60px 0 20px;
+}
+footer h4{
+	font-weight: 800;
+}
+footer ul{
+	line-height: 1.428vw;
+	list-style-type: none;
+}
+footer ul a{
+	text-decoration: none;
+	color: black;
+}
+footer div div{
+	padding-right: 100px;
+    padding-left: 100px;
+}
+footer div div.padding{
+	padding-right: 150px;
+    padding-left: 100px;
+}
+footer img.logo{
+	padding-left: 20px;
+	width: 5vw;
 }
