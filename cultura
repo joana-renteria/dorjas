@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <title>Cocaina</title>
+  <link rel="stylesheet" type="text/css" href="css/cocaina.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<header>	
+		<div class="cont">
+			<div class="head">
+			<ul>
+				<li><a class="pad" href="index.html"><img src="img/logo.jpg" width="140" alt="logo"></a></li>
+				<li><a href="#news">Otro enlace</a></li>
+				<li class="dropdown"><a href="#news">Articulos</a>
+					<div class="dropdown-content">
+							<a href="#">Drogas</a>
+							<a href="#">Cultura</a>
+					</div>
+				</li>
+				<li><a href="">Quienes somos</a></li>
+			</ul>
+			</div>
+			<div class="right" >
+					<input type="search" id="site-search" name="q">
+					<button>Search</button>
+			</div>
+		</div>
+	</header>
+	<article>
+		<div class="cont1">
+			<div class="sticky">
+				<ul class="index">
+					<a href="#descripcion"><li>Descripcion</li></a><br/>
+					<a href="#efectos"><li>Efectos deseados</li></a><br/>
+					<a href="#duracion"><li>Duracion</li></a><br/>
+					<a href="#riesgos"><li>Riesgos</li></a><br/>
+					<a href="#reduccion"><li>Reduccion de riesgos</li></a><br/>
+					<a href="#legislacion"><li>Legislación</li></a>
+				</ul>
+			</div>
+			<div class="cont">
+				<h1>Cultura</h1><br/>
+				<h2>Sustancias Principales</h2><br/><br/><br/>
+				<img src="img/Alcohol.jpg"><br/><br/>
+				<h3 id="descripcion">Drogas y cultura</h3>
+<p>Las drogas han sido parte de nuestra cultura desde mediados del siglo pasado. La música y los medios de difusión las popularizaron en la década de los 60, invadiendo todos los aspectos de la sociedad.</p>
+<p>Se estima que unos 208 millones de personas consumen drogas ilegales internacionalmente. En Estados Unidos, los resultados del Estudio Nacional sobre el Consumo de Drogas y Salud de 2007 mostraron que</p>
+<p>19,9 millones de los estadounidenses (o el 8% de la población de 12 años o más) había consumido drogas ilícitas el mes anterior al estudio.</p>
+<p>Probablemente conoces a alguien que ha sido afectado directa o indirectamente por las drogas.</p>
+<p>La droga más comúnmente usada (y abusada) en Estados Unidos es el alcohol. Los accidentes automovilísticos relacionados con el alcohol encabezan la lista como la segunda</p>
+<p>causa de muerte de jóvenes en los Estados Unidos.</p>
+<p>La droga ilegal más comúnmente usada es la marihuana. De acuerdo con el Informe Mundial sobre la Droga de las Naciones Unidas en 2008, cerca del 3,9% de la población mundial</p>
+<p>entre los 15 y los 64 años consume marihuana.</p>
+<p>Los jóvenes, hoy, están más expuestos a las drogas que nunca antes. Basado en una encuesta realizada por los Centros para el Control de Enfermedades en el año 2007, el</p>
+<p>45% de los estudiantes de secundaria bebieron alcohol en todo el país y el 19,7% fumó marihuana durante el último mes.</p>
+<p>En Europa, estudios recientes entre los adolescentes de 15 y 16 años muestran que el uso de la marihuana varía por país desde un 10% hasta más del 40%,</p>
+<p>con los porcentajes más altos de jóvenes en la República Checa (44%), seguida por Irlanda (39%), el Reino Unido (38%) y Francia (38%). En España y el Reino Unido, el uso de la cocaína entre jóvenes de</p>
+<p>15 a 16 años es de un 4% a un 6%.</p>
+<p>El uso de la cocaína entre la gente joven se ha elevado en Dinamarca, Italia, España, Reino Unido, Noruega y Francia.</p>				
+		
+				
+				
+				
+				
+				
+				
+				
+			</div>
+		</div>
+	</article>
+</body>
