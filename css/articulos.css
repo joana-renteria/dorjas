@@ -123,20 +123,29 @@ article div.sticky{
 	height: 12.5vw;
 	font-size: 0.85vw;
 }
+article div.sticky1{
+	margin-top: 7.80vw;
+	position: sticky;
+	top: 150px;
+	left: 100px;
+	box-shadow: 0 0 15px 0 rgb(47 47 47 / 10%);
+	padding: 1vw;
+	display: block;
+	height: 5.5vw;
+	font-size: 0.85vw;
+}
 article div.ul{
 	margin-left: 50px;
 }
 article div.cont {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 	margin: 0 auto;
 	width: 46%;
 	padding: 10px; 
 }
 article h1{
 	font-size: 30px;
- 	display: table;
 	margin: 0px auto 0px auto;
 	padding: 5px;
 	background-color: #000;
@@ -148,6 +157,7 @@ article h1{
 	margin-bottom: 0px;
 }
 article h2{
+	text-align:center;
 	margin-top: 0px;
     color: black;
     background-color: #f8dc22;
@@ -165,6 +175,26 @@ article h3{
 }
 article p{
 	font-weight: 400;
+}
+article video{
+	width: 500px;
+}
+th, td{
+	border: 1px solid black;
+	padding: 10px;
+}
+article div table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+article table.volun{
+	border: 1px solid black;
+}
+article table.volun tr.tr{
+	width: 500px;
+}
+article table.volun td.td{
+	height: 200px;
 }
 
 /*---FOOTER---*/
