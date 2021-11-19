@@ -1,11 +1,14 @@
+/* Le damos estilo a todas las imagenes */
 img {
     max-width: 100%;
 }
+/* Aqui le damos estilo a la pagina en general declarando la fuente de la letra y quitando margenes */
 body, ul{
 	margin: 0; 
 	padding: 0;
 	font-family: Segoe ui;
 }
+/* Le asignamos estilo a todos los divs con la clase .cont */
 div.cont {
 	margin: 0 auto;
 	display: flex;
@@ -14,6 +17,7 @@ div.cont {
 	align-content: space-between;
 }
 /*---HEADER---*/
+/* Aqui le damos estilo al header en general */
 header {
 	list-style-type: none;
 	margin: 0;
@@ -22,18 +26,22 @@ header {
 	display: flex;
 	width: 100%;
 }
+/* Aqui principalmente le damos todo lo necesario para hacer el menu "dropdown" en el header */
+/* Aqui le decimos que alinee las imagenes al medio */
 header img {
 	vertical-align: middle;
 }
+/* En este apartado le damos estilos a los links dentro del header que tengan la clase ".none" */
 header a.none{
 	color: black;
 	padding: 0px;
 }
+/* Con esto hacemos que las listas se vean en una linea en vez de verticalmente y tambien el tamaño de letra */
 header li {
 	display: inline;	
 	font-size: 22px;
-	/* PATITOOS!! */
 }
+/* Con esto le damos estilo a los links que esten dentro de un li en el header */
 header li a {
 	display: inline-block;
 	color: white;
@@ -41,27 +49,33 @@ header li a {
 	padding: 12px 16px;
 	text-decoration: none;
 }
+/* Aqui le damos el estilo a los links y la clase ".dropdown" con el atributo :hover */
 header li a:hover, .dropdown:hover {
 	background-color: red;
 }
+/* Aqui le damos estilo a los elementos con la clase ".dropdown" en el header */
 header .dropdown {
 	display: inline-block;
 }
+/* Aqui le damos estilo a los elementos con la clase ".dropdown-content" en el header */
 header .dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: grey;
 	min-width: 100px;
 }
+/* Con esto le damos estilo a los links que esten dentro de una clase ".dropdown-content" en el header */
 header .dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 }
+/* Con esto le damos estilo a los links que esten dentro de una clase ".dropdown-content" en el header con el atributo :hover */
 header .dropdown-content a:hover {
 	background-color: LightGrey;
 }
+/* Aqui le damos estilos a las clases ".dropdown:hover .dropdown-content" que esten en el header */
 header .dropdown:hover .dropdown-content {
 	display: block;
 }			
@@ -69,13 +83,16 @@ label {
 	display: block;
 	font: 1rem 'Fira Sans', sans-serif;
 }
+/* Aqui le damos margen al input y label */
 input,label {
 	margin: .4rem 0;
 }
+/* Con esto le damos estilo al div con la clase .right para que se mueva a la derecha */ 
 div.right{
 	float: right;
 	margin: 20px;
 }
+/* Aqui le damos estilo al div que contiene lo que seria el menu dropdown en si */
 div.head{
 	list-style-type: none;
 	margin: 0;
@@ -85,9 +102,11 @@ div.head{
 	width: 80%;
 }
 /*---ARTICLE---*/
+/* Le ponemos la imagen de fondo al article */
 article {
 	background-image: url('../imgs/fondo.GIF');
 }
+/* Le da estilo a los div de la clase .cont */
 article div.cont {
 	margin: 0 auto;
 	display: flex;
@@ -98,26 +117,32 @@ article div.cont {
 	justify-content: center;
 	background-color: white;
 }
+/* Le damos tamaño a los iframes */
 article iframe{
 	width: 250vw;
 	height: 40vw;
 }
+/* Le da estilo a los div de la clase .div2 */
 article div.div2 {
 	margin: 0 auto;
 	border: 2px solid green;
 	float: right;
 }
+/* Le asigna estilo a los div dentro de otros div de la clase .cont */
 article div.cont div{
 	border: 2px solid white;
 	margin: 5px;
 	width: 420px;
 }
+/* Aqui le da una altura concreta a los p que estan dentro de divs /*
 article div.cont div p{
 	height: 175px;
 }
+/* Aqui le da un borde a los hr que estan dentro de divs /*
 article div.cont div hr{
 	border-top: 1px dashed black;
 }
+/* Le da estilo a todos los titulos h1 que estan dentro de los divs */
 article div.cont div h1{
 	display: inline;
 	color: #fff;
@@ -128,11 +153,13 @@ article div.cont div h1{
 	font-weight: 800;
 	font-style: normal;
 }
+/* Le da estilo a todos los titulos h1 que estan dentro de los divs con el atributo :hover */
 article div.cont div:hover h1{
 	background-color: #f8dc22;
 	color: black;
 	box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
 }
+/* Le da estilo a todos los titulos h5 que estan dentro de los divs */
 article div.cont div h5{
 	display: inline;
 	color: black;
@@ -143,6 +170,7 @@ article div.cont div h5{
 	font-weight: 800;
 	font-style: normal;
 }
+/* Le da estilo a los botones */
 a.button {
 	border: 3px solid #000;
 	border-radius: 0;
@@ -152,36 +180,44 @@ a.button {
 	padding: 0.25em 1em;
 	text-decoration: none;
 }
+/* Le da estilo a los botones con el atributo :hover */
 a.button:hover{
 	background-color: black;
 	color: white;
 	transition: background-color .3s;
 }
 /*---FOOTER---*/
+/* Le damos estilo al footer en general */
 footer {
 	background-color: #f8dc22;
 	color: #000;
 	padding: 60px 0 20px;
 }
+/* Asignamos un grosor a los titulos h4 en el footer */
 footer h4{
 	font-weight: 800;
 }
+/* Aqui le damos estilo a las listas en el footer */
 footer ul{
 	line-height: 1.428vw;
 	list-style-type: none;
 }
+/* Aqui le damos estilo a los links dentro de las listas en el footer */
 footer ul a{
 	text-decoration: none;
 	color: black;
 }
+/* Aqui le damos un estilo para que se agrupen de manera correcta a los divs dentro del div.cont */
 footer div div{
 	padding-right: 100px;
 	padding-left: 100px;
 }
+/* Aqui le damos estilo a un div en concreto para que se agrupe como queremos */
 footer div div.padding{
 	padding-right: 150px;
 	padding-left: 100px;
 }
+/* Por ultimo con esto le damos estilo a la imagen de nuestro logo que aparece en el footer */
 footer img.logo{
 	padding-left: 20px;
 	width: 5vw;
