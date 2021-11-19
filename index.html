@@ -6,15 +6,18 @@
   <link rel="stylesheet" type="text/css" href="css/estilos.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <link rel="shortcut icon" href="imgs/logo.jpg">
+  <!-- Aqui ponemos el logo de la web en la barra de pestañas -->
+  <link rel="shortcut icon" href="img/logo.jpg">
 </head>
 
 <body>  
 	<header>
+		<!-- Aqui creamos un div que va a hacer de contenedor de todo el contenido del header -->
 		<div class="cont">
+			<!-- Aqui ira todo lo que va a ser el menu del header -->
 			<div class="head">
 			<ul>
-				<li><a class="none" href="index.html"><img src="imgs/logo.jpg" width="140" alt="logo"></a></li>
+				<li><a class="none" href="index.html"><img src="img/logo.jpg" width="140" alt="logo"></a></li>
 				<li class="dropdown"><a>Articulos</a>
 					<div class="dropdown-content">
 							<a href="index.html">Drogas</a>
@@ -24,6 +27,7 @@
 				<li><a href="QuienesSomos.html">Quienes somos</a></li>
 			</ul>
 			</div>
+			<!-- Por ultimo esto sera el buscador que hemos puesto en el header -->
 			<div class="right" >
 				<input type="search" id="site-search" name="q">
 				<button>Search</button>
@@ -31,10 +35,13 @@
 		</div>
 	</header>
 	<article>
+		<!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del article -->
 		<div class="cont">
+			<!-- Dentro de cada div ira una droga con una imagen, titulo, el tipo, una pequeña descripcion 
+			y un boton para acceder a la pagina de dicha droga -->
 			<div>
 				<hr/>
-				<img src="imgs/Cocaina.jpg" width="420" height="270" alt="cocaina"><br/><br/>
+				<img src="img/Cocaina.jpg" width="420" height="270" alt="cocaina"><br/><br/>
 				<h1>Cocaina</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -49,7 +56,7 @@
 			</div>
 			<div>
 				<hr/>
-				<img src="imgs/cannabis.jpg" width="420" height="270" alt="cannabis"><br/><br/>
+				<img src="img/cannabis.jpg" width="420" height="270" alt="cannabis"><br/><br/>
 				<h1>Cannabis</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -64,7 +71,7 @@
 				<hr/>
 			</div>
 			<div>
-				<img src="imgs/alcohol.jpg" width="420" height="270" alt="alcohol"><br/><br/>
+				<img src="img/alcohol.jpg" width="420" height="270" alt="alcohol"><br/><br/>
 				<h1>Alcohol</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -79,7 +86,7 @@
 				<hr/>
 			</div>
 			<div>
-				<img src="imgs/Ketamina.jpg" width="420" height="270" alt="ketamina"><br/><br/>
+				<img src="img/Ketamina.jpg" width="420" height="270" alt="ketamina"><br/><br/>
 				<h1>Ketamina</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -94,7 +101,7 @@
 				<hr/>
 			</div>
 			<div>
-				<img src="imgs/Ketamina.jpg" width="420" height="270" alt="heroina"><br/><br/>
+				<img src="img/Ketamina.jpg" width="420" height="270" alt="heroina"><br/><br/>
 				<h1>Heroina</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -109,7 +116,7 @@
 				<hr/>
 			</div>
 			<div>
-				<img src="imgs/speed.jpg" width="420" height="270" alt="speed"><br/><br/>
+				<img src="img/speed.jpg" width="420" height="270" alt="speed"><br/><br/>
 				<h1>Speed</h1><br/>
 				<h5>Sustancias principales</h5>
 				<p>
@@ -125,7 +132,9 @@
 		</div>
 	</article>
 	<footer>
+		<!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del footer -->
 		<div class="cont">
+			<!-- En este div ponemos una referencia a la pagina de quienes somos -->
 			<div>
 				<h4>PERICO Y KETA</h4>
 				<ul>
@@ -135,25 +144,31 @@
 				</ul>
 			</div>
 			<div>
+				<!-- Aqui un link nos mandara a la pagina de la lista de drogas y orto sera un link 
+				externo a una pagina del gobierno sobre las leyes de las drogas -->
 				<h4>INFODROGAS</h4>
 				<ul>
 					<li><a href="index.html">Sustancias</a></li>
 					<li><a href="https://pnsd.sanidad.gob.es/pnsd/legislacion/docs/LE_SISTEMA.pdf">Leyes y drogas</a></li>
 				</ul>
 			</div>
+			<!-- Aqui un link a la pagina de ArticulosCientificos -->
 			<div class="padding">
 				<h4>RECURSOS</h4>
 				<ul>
 					<li><a href="articulosCientificos.html">Articulos Cientificos</a><li>
 				</ul>
 			</div>
+			<!-- Por ultimo aqui se muestra una imagen de el logo de la pagina junto con un pequeño 
+			texto y un mapa de imagenes -->
 			<div>
-				<img class="logo" alt="logo" src="imgs/logo.jpg">
+				<img class="logo" alt="logo" src="img/logo.jpg">
 				
 				<p>©2021 Perico y Keta</p>
 				
-				<img src="imgs/logos1.png" alt="logos" usemap="#image-map">
+				<img src="img/logos1.png" alt="logos" usemap="#image-map">
 				
+				<!-- Aqui cada "title" representa el link de cada apartado del mapa -->
 				<map name="image-map">
 					<area alt="facebook" title="facebook" href="https://www.facebook.com/" coords="19,17,13" shape="circle">
 					<area alt="twitter" title="twitter" href="https://twitter.com/home?lang=es" coords="49,18,13" shape="circle">
