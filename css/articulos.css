@@ -85,6 +85,7 @@ div.head{
 /*---ARTICLE---*/
 article{
 	font-size: 16px;
+	background-image: url('../imgs/fondo.GIF');
 }
 article div.cont1 {
 	display: flex;
