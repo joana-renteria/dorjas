@@ -56,11 +56,11 @@ header .dropdown:hover .dropdown-content {
 	display: block;
 }			
 label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+	display: block;
+	font: 1rem 'Fira Sans', sans-serif;
 }
 input,label {
-    margin: .4rem 0;
+	margin: .4rem 0;
 }
 header div.cont {
 	margin: 0 auto;
@@ -149,29 +149,29 @@ article h1{
 	margin: 0px auto 0px auto;
 	padding: 5px;
 	background-color: #000;
-    color: #fff;
-    box-shadow: 0.375rem 0 0 #000, -0.375rem 0 0 #000;
+	color: #fff;
+	box-shadow: 0.375rem 0 0 #000, -0.375rem 0 0 #000;
 	font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
+	font-weight: 800;
+	font-style: normal;
 	margin-bottom: 0px;
 }
 article h2{
 	text-align:center;
 	margin-top: 0px;
-    color: black;
-    background-color: #f8dc22;
-    box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
+	color: black;
+	background-color: #f8dc22;
+	box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
 	font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
+	font-weight: 800;
+	font-style: normal;
 	font-size: 25px;
 }
 article h3{
 	font-size: 20px;
 	font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
+	font-weight: 800;
+	font-style: normal;
 }
 article p{
 	font-weight: 400;
@@ -207,8 +207,8 @@ div.cont {
 }
 footer {
 	background-color: #f8dc22;
-    color: #000;
-    padding: 60px 0 20px;
+	color: #000;
+	padding: 60px 0 20px;
 }
 footer h4{
 	font-weight: 800;
@@ -223,11 +223,11 @@ footer ul a{
 }
 footer div div{
 	padding-right: 100px;
-    padding-left: 100px;
+	padding-left: 100px;
 }
 footer div div.padding{
 	padding-right: 150px;
-    padding-left: 100px;
+	padding-left: 100px;
 }
 footer img.logo{
 	padding-left: 20px;

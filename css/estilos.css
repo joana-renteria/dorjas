@@ -62,11 +62,11 @@ header .dropdown:hover .dropdown-content {
 	display: block;
 }			
 label {
-    display: block;
-    font: 1rem 'Fira Sans', sans-serif;
+	display: block;
+	font: 1rem 'Fira Sans', sans-serif;
 }
 input,label {
-    margin: .4rem 0;
+	margin: .4rem 0;
 }
 div.right{
 	float: right;
@@ -112,17 +112,17 @@ article div.cont div p{
 	height: 175px;
 }
 article div.cont div hr{
-  border-top: 1px dashed black;
+	border-top: 1px dashed black;
 }
 article div.cont div h1{
 	display: inline;
-    color: #fff;
-    background-color: #000;
-    box-shadow: 0.375rem 0 0 #000, -0.375rem 0 0 #000;
-    word-break: break-word;
+	color: #fff;
+	background-color: #000;
+	box-shadow: 0.375rem 0 0 #000, -0.375rem 0 0 #000;
+	word-break: break-word;
 	font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
+	font-weight: 800;
+	font-style: normal;
 }
 article div.cont div:hover h1{
 	background-color: #f8dc22;
@@ -131,21 +131,21 @@ article div.cont div:hover h1{
 }
 article div.cont div h5{
 	display: inline;
-    color: black;
-    background-color: #f8dc22;
-    box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
-    word-break: break-word;
+	color: black;
+	background-color: #f8dc22;
+	box-shadow: 0.375rem 0 0 #f8dc22, -0.375rem 0 0 #f8dc22;
+	word-break: break-word;
 	font-family: Montserrat,sans-serif;
-    font-weight: 800;
-    font-style: normal;
+	font-weight: 800;
+	font-style: normal;
 }
 a.button {
-    border: 3px solid #000;
-    border-radius: 0;
-    color: #000;
-    font-weight: 500;
-    background-color: transparent;
-    padding: 0.25em 1em;
+	border: 3px solid #000;
+	border-radius: 0;
+	color: #000;
+	font-weight: 500;
+	background-color: transparent;
+	padding: 0.25em 1em;
 	text-decoration: none;
 }
 a.button:hover{
@@ -156,8 +156,8 @@ a.button:hover{
 /*---FOOTER---*/
 footer {
 	background-color: #f8dc22;
-    color: #000;
-    padding: 60px 0 20px;
+	color: #000;
+	padding: 60px 0 20px;
 }
 footer h4{
 	font-weight: 800;
@@ -172,11 +172,11 @@ footer ul a{
 }
 footer div div{
 	padding-right: 100px;
-    padding-left: 100px;
+	padding-left: 100px;
 }
 footer div div.padding{
 	padding-right: 150px;
-    padding-left: 100px;
+	padding-left: 100px;
 }
 footer img.logo{
 	padding-left: 20px;
