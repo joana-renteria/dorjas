@@ -121,8 +121,8 @@ article div.sticky{
 	box-shadow: 0 0 15px 0 rgb(47 47 47 / 10%);
 	padding: 1vw;
 	display: block;
-	height: 12.5vw;
-	font-size: 0.85vw;
+	height: 5%;
+	font-size: 10px;
 	background-color: white;
 }
 article div.sticky1{
@@ -133,8 +133,8 @@ article div.sticky1{
 	box-shadow: 0 0 15px 0 rgb(47 47 47 / 10%);
 	padding: 1vw;
 	display: block;
-	height: 5.5vw;
-	font-size: 0.85vw;
+	height: 6.5vw;
+	font-size: 10px;
 	background-color: white;
 }
 article div.ul{
@@ -143,7 +143,8 @@ article div.ul{
 article div.cont {
 	display: flex;
 	flex-direction: column;
-	margin: 80px;
+	margin-top: 7.80vw;
+	margin-bottom: 7.80vw;
 	width: 46%;
 	padding: 20px; 
 	background-color: white;
