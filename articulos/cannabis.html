@@ -6,12 +6,15 @@
   <link rel="stylesheet" type="text/css" href="../css/articulos.css"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
+  <!-- Aqui ponemos el logo de la web en la barra de pestañas -->
   <link rel="shortcut icon" href="../imgs/logo.jpg">
 </head>
 
 <body>
 <header>	
+		<!-- Aqui creamos un div que va a hacer de contenedor de todo el contenido del header -->
 		<div class="cont">
+			<!-- Aqui ira todo lo que va a ser el menu del header -->
 			<div class="head">
 			<ul>
 				<li><a class="none" href="../index.html"><img src="../imgs/logo.jpg" width="140" alt="logo"></a></li>
@@ -25,6 +28,7 @@
 				<li><a href="">Quienes somos</a></li>
 			</ul>
 			</div>
+			<!-- Por ultimo esto sera el buscador que hemos puesto en el header -->
 			<div class="right" >
 					<input type="search" id="site-search" name="q">
 					<button>Search</button>
@@ -32,7 +36,9 @@
 		</div>
 	</header>
 	<article>
+		<!-- Aqui creamos un div que va a hacer de contenedor de todo el contenido del article -->
 		<div class="cont1">
+			<!-- En este div declaramos lo que sera el indice de esta pagina -->
 			<div class="sticky">
 				<ul class="index">
 					<li><a href="#descripcion">Descripcion</a></li>
@@ -43,7 +49,9 @@
 					<li><a href="#legislacion">Legislación</a><li>
 				</ul>
 			</div>
+			<!-- Aqui creamos un div que va a hacer de contenedor de todo lo que sera en si el contenido de la pagina -->
 			<div class="cont">
+				<!-- Informacion sobre el cannabis -->
 				<h1>Cannabis</h1><br/>
 				<h2>Sustancias Principales</h2><br/><br/><br/>
 				<img alt="cannabis" src="../imgs/cannabis.jpg"><br/><br/>
@@ -78,6 +86,7 @@
 				<p>
 					Aceite de hachís: preparado mediante la destilación de la planta en disolventes orgánicos. Dependiendo de la técnica y de los aparatos empleados en la destilación puede llegar a alcanzar un 65% de contenido de THC.
 				</p>
+				<!-- Una pequeña lista -->
 				<h3 id="efectos">Efectos deseados</h3>
 				<div class="ul">
 					<ul class="efectos">
@@ -91,6 +100,7 @@
 						<li>La propia sensación de “ir colocado/a”.</li>
 					</ul>
 				</div>
+				<!-- Mas informacion sobre el cannabis -->
 				<h3 id="composicion">Composicion</h3>
 				<p>
 					La especie Cannabis Sativa presenta 483 compuestos químicos diferentes, 
@@ -115,6 +125,7 @@
 					cannabidiol (CBD) que modula los efectos del THC y reduce algunos de sus efectos 
 					negativos.
 				</p>
+				<!-- Lista sobre riesgos -->
 				<h3 id="riesgos">Riesgos</h3>
 				<div class="ul">
 					<ul class="efectos">
@@ -131,6 +142,7 @@
 						<li>Tos, sensación de ahogo, mucosidad, ronquera, irritación de la faringe.</li>
 					</ul>
 				</div>
+				<!-- Lista con texto dentro con recomendaciones para reducir riesgos -->
 				<h3 id="reduccion">Recomendaciones de Reducción de Riesgos</h3>
 				<ol>
 					<li>
@@ -170,6 +182,7 @@
 						</p>
 					</li>
 				</ol>
+				<!-- Texto sobre leyes y cocaina -->
 				<h3 id="legislacion">Leyes y cocaina</h3>
 				<p>
 					Los problemas con la justicia son un riesgo importante relacionado con las drogas por lo que es fundamental 
@@ -180,7 +193,9 @@
 		</div>
 	</article>
 	<footer>
+		<!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del footer -->
 		<div class="cont">
+			<!-- En este div ponemos una referencia a la pagina de quienes somos -->
 			<div>
 				<h4>PERICO Y KETA</h4>
 				<ul>
@@ -191,18 +206,23 @@
 				</ul>
 			</div>
 			<div>
+				<!-- Aqui un link nos mandara a la pagina de la lista de drogas y orto sera un link 
+				externo a una pagina del gobierno sobre las leyes de las drogas -->
 				<h4>INFODROGAS</h4>
 				<ul>
 					<li><a href="../index.html">Sustancias</a></li>
 					<li><a href="https://pnsd.sanidad.gob.es/pnsd/legislacion/docs/LE_SISTEMA.pdf">Leyes y drogas</a></li>
 				</ul>
 			</div>
+			<!-- Aqui un link a la pagina de ArticulosCientificos -->
 			<div class="padding">
 				<h4>RECURSOS</h4>
 				<ul>
 					<li><a href="articulosCientificos.html">Articulos Cientificos</a><li>
 				</ul>
 			</div>
+			<!-- Por ultimo aqui se muestra una imagen de el logo de la pagina junto con un pequeño 
+			texto y un mapa de imagenes -->
 			<div>
 				<img class="logo" alt="logo" src="../imgs/logo.jpg">
 				<p>
@@ -210,7 +230,8 @@
 				</p>
 				
 				<img src="../imgs/logos1.png" alt="logos" usemap="#image-map">
-
+				
+				<!-- Aqui cada "title" representa el link de cada apartado del mapa -->
 				<map name="image-map">
 					<area alt="facebook" title="facebook" href="https://www.facebook.com/" coords="19,17,13" shape="circle">
 					<area alt="twitter" title="twitter" href="https://twitter.com/home?lang=es" coords="49,18,13" shape="circle">
