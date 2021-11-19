@@ -31,7 +31,8 @@ header a.none{
 }
 header li {
 	display: inline;	
-	font-size: 30px;
+	font-size: 22px;
+	/* PATITOOS!! */
 }
 header li a {
 	display: inline-block;
