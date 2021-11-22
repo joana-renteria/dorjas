@@ -2,6 +2,9 @@
 # Dorjas
 drogas, drogas never changes
 
+# Atención - Epilepsia
+Esta pagina web tiene un fondo animado que podría ser peligroso para gente con epilepsia
+
 # Autores
 Sendoa Badiola, Alex Irusta, Joana Renteria
 
