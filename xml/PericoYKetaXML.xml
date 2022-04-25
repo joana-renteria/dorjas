@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PericoYKeta>
+    
+    <productos idproducto = "P01">
+        <nombre>Los Polvos Mágicos del Hada Madrina</nombre>
+        <droga>Cocaína</droga>
+        <tipo>Estimulante</tipo>
+        <stock>6</stock>
+        <vendedor>jesus_se_mete_toda_46</vendedor>
+        <imagen>"../imgs/Cocaina.jpg"</imagen>
+    </productos>
+    
+    
+    <usuarios premium = "S">
+        <username>jesus_se_mete_toda_46</username>
+        <nick>Jesusit0 Perez</nick>
+        <email>jesusperezrodriguez@hotmail.com</email>
+        <contrasena>30eurosElgramo</contrasena>
+    </usuarios>
+    
+    
+    <pedidos idped = "PD01">
+        <username>jesus_se_mete_toda_46</username>
+        <lineaprod>
+            <idproducto>P01</idproducto>
+        </lineaprod>
+        <fechaped>06/04/2022</fechaped>
+        <dirped>Calle Almíbar 14, Bilbao</dirped>
+        <importe>326,60€</importe>           
+    </pedidos>
+    
+</PericoYKeta>
+
