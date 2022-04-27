@@ -1,69 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="PericoYKeta">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="productos">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="producto">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="nombre" type="xs:string" />
-                    <xs:element name="droga" type="xs:string" />
-                    <xs:element name="tipo" type="xs:string" />
-                    <xs:element name="stock" type="xs:unsignedByte" />
-                    <xs:element name="vendedor" type="xs:string" />
-                    <xs:element name="imagen" type="xs:string" />
-                  </xs:sequence>
-                  <xs:attribute name="idproducto" type="xs:string" use="required" />
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="usuarios">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="usuario">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="username" type="xs:string" />
-                    <xs:element name="nick" type="xs:string" />
-                    <xs:element name="email" type="xs:string" />
-                    <xs:element name="contrasena" type="xs:string" />
-                  </xs:sequence>
-                  <xs:attribute name="premium" type="xs:string" use="required" />
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="pedidos">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name="pedido">
-                <xs:complexType>
-                  <xs:sequence>
-                    <xs:element name="username" type="xs:string" />
-                    <xs:element name="lineaprod">
-                      <xs:complexType>
-                        <xs:sequence>
-                          <xs:element name="idproducto" type="xs:string" />
-                        </xs:sequence>
-                      </xs:complexType>
-                    </xs:element>
-                    <xs:element name="fechaped" type="xs:string" />
-                    <xs:element name="dirped" type="xs:string" />
-                    <xs:element name="importe" type="xs:string" />
-                  </xs:sequence>
-                  <xs:attribute name="idped" type="xs:string" use="required" />
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
+  
+    <xs:simpleType name="restriccionPremium">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="S"/>
+            <xs:enumeration value="N"/>
+        </xs:restriction>
+    </xs:simpleType>  
+    
+    <xs:complexType name="tipoProd">
+        <xs:choice>
+            <xs:element name="sedantes"/>
+            <xs:element name="estimulantes"/>
+            <xs:element name="alucinógenos"/>
+            <xs:element name="afrodisíacos"/>
+        </xs:choice>
     </xs:complexType>
-  </xs:element>
+    
+    <xs:element name="PericoYKeta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="productos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="producto">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string" minOccurs="1" />
+                                        <xs:element name="droga" type="xs:string" minOccurs="1" />
+                                        <xs:element name="tipo" type="tipoProd" minOccurs="1" />
+                                        <xs:element name="stock" type="xs:integer" minOccurs="1" />
+                                        <xs:element name="vendedor" type="xs:string" minOccurs="1" />
+                                        <xs:element name="imagen" type="xs:string" minOccurs="1" />
+                                    </xs:sequence>
+                                    <xs:attribute name="idproducto" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="usuarios">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="usuario">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="username" type="xs:string" minOccurs="1" />
+                                        <xs:element name="nick" type="xs:string" minOccurs="0" />
+                                        <xs:element name="email" minOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value="([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element name="contrasena" minOccurs="1" >
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="8"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="premium" type="restriccionPremium" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="pedidos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="pedido">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="username" type="xs:string" minOccurs="1" />
+                                        <xs:element name="lineaprod" minOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="idproducto" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="fechaped" type="xs:date" minOccurs="1"/>
+                                        <xs:element name="dirped" type="xs:string" minOccurs="1"/>
+                                        <xs:element name="importe" type="xs:decimal" minOccurs="1"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="idped" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 </xs:schema>
