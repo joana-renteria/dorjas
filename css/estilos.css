@@ -92,6 +92,10 @@ div.right{
 	float: right;
 	margin: 20px;
 }
+div li.derecha{
+    margin-top: 10px;
+    float: right;
+}
 /* Aqui le damos estilo al div que contiene lo que seria el menu dropdown en si */
 div.head{
 	list-style-type: none;
@@ -134,11 +138,11 @@ article div.cont div{
 	margin: 5px;
 	width: 420px;
 }
-/* Aqui le da una altura concreta a los p que estan dentro de divs /*
+/* Aqui le da una altura concreta a los p que estan dentro de divs */
 article div.cont div p{
 	height: 175px;
 }
-/* Aqui le da un borde a los hr que estan dentro de divs /*
+/* Aqui le da un borde a los hr que estan dentro de divs */
 article div.cont div hr{
 	border-top: 1px dashed black;
 }
