@@ -121,6 +121,16 @@ article div.cont {
 	justify-content: center;
 	background-color: white;
 }
+article div.none {
+        margin: 0 auto;
+        align-content: space-between;
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        padding-top: 177.5px;
+        padding-bottom: 177.5px;
+}
 /* Le damos tamaño a los iframes */
 article iframe{
 	width: 250vw;
