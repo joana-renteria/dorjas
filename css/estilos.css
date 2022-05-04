@@ -92,6 +92,7 @@ div.right{
 	float: right;
 	margin: 20px;
 }
+/* Esto para que el login en el header se mueva a la derecha */
 div li.derecha{
     margin-top: 10px;
     float: right;
@@ -121,6 +122,7 @@ article div.cont {
 	justify-content: center;
 	background-color: white;
 }
+/* Estilo para el div en el login y registro */
 article div.none {
         margin: 0 auto;
         align-content: space-between;
