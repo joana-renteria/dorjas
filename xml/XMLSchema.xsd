@@ -10,10 +10,10 @@
     
     <xs:complexType name="tipoProd">
         <xs:choice>
-            <xs:element name="sedantes"/>
-            <xs:element name="estimulantes"/>
-            <xs:element name="alucinógenos"/>
-            <xs:element name="afrodisíacos"/>
+            <xs:element name="sedante" type="xs:string"/>
+            <xs:element name="estimulante" type="xs:string"/>
+            <xs:element name="alucinógeno" type="xs:string"/>
+            <xs:element name="afrodisíaco" type="xs:string"/>
         </xs:choice>
     </xs:complexType>
     
@@ -23,7 +23,7 @@
                 <xs:element name="productos">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="producto">
+                            <xs:element name="producto" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="nombre" type="xs:string" minOccurs="1" />
@@ -42,7 +42,7 @@
                 <xs:element name="usuarios">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="usuario">
+                            <xs:element name="usuario" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="username" type="xs:string" minOccurs="1" />
@@ -71,7 +71,7 @@
                 <xs:element name="pedidos">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="pedido">
+                            <xs:element name="pedido" maxOccurs="unbounded">
                                 <xs:complexType>
                                     <xs:sequence>
                                         <xs:element name="username" type="xs:string" minOccurs="1" />

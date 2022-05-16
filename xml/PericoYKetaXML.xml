@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<PericoYKeta>
+<PericoYKeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchema.xsd">
     
     <productos>
         <producto idproducto = "P01">
             <nombre>Los Polvos Mágicos del Hada Madrina</nombre>
             <droga>Cocaína</droga>
-            <tipo>Estimulante</tipo>
+            <tipo><estimulante/></tipo>
             <stock>6</stock>
             <vendedor>jesus_se_mete_toda_46</vendedor>
             <imagen>"../imgs/Cocaina.jpg"</imagen>
+        </producto>
+        <producto idproducto = "P02">
+            <nombre>Los Diamantes de Heisenberg</nombre>
+            <droga>Metanfetamina</droga>
+            <tipo><estimulante/></tipo>
+            <stock>12</stock>
+            <vendedor>Heisenberg</vendedor>
+            <imagen>"../img/metanfetamina.jpg"</imagen>
+        </producto>
+        <producto idproducto = "P03">
+            <nombre>Especial K</nombre>
+            <droga>Ketamina</droga>
+            <tipo><sedante/></tipo>
+            <stock>10</stock>
+            <vendedor>K_mello</vendedor>
+            <imagen>"../img/Ketamina.jpg"</imagen>
+        </producto>
+        <producto idproducto = "P04">
+            <nombre>Simplemente Codeina</nombre>
+            <droga>Codeina</droga>
+            <tipo><sedante/></tipo>
+            <stock>13</stock>
+            <vendedor>LaTosMeDespiertaCadaRato</vendedor>
+            <imagen>"../img/codeina.jpg"</imagen>
         </producto>
     </productos>
     
@@ -20,6 +44,24 @@
             <email>jesusperezrodriguez@hotmail.com</email>
             <contrasena>30eurosElgramo</contrasena>
         </usuario>
+        <usuario premium = "S">
+            <username>Heisenberg</username>
+            <nick>Walter White</nick>
+            <email>wwhite@gmail.com</email>
+            <contrasena>jessePinkman</contrasena>    
+        </usuario>
+        <usuario premium = "N">
+            <username>K_mello</username>
+            <nick>K_torcegramostengo</nick>
+            <email>korreopersonal@gmail.com</email>
+            <contrasena>KmionKlabera</contrasena>    
+        </usuario>
+        <usuario premium = "N">
+            <username>LaTosMeDespiertaCadaRato</username>
+            <nick></nick>
+            <email>meDespierta@hotmail.com</email>
+            <contrasena>laTosKana</contrasena>    
+        </usuario>
     </usuarios>
     
     <pedidos>
@@ -28,9 +70,28 @@
             <lineaprod>
                 <idproducto>P01</idproducto>
             </lineaprod>
-            <fechaped>06/04/2022</fechaped>
+            <fechaped>2022-04-06</fechaped>
             <dirped>Calle Almíbar 14, Bilbao</dirped>
-            <importe>326,60€</importe>           
+            <importe>326.60</importe>           
+        </pedido>
+        <pedido idped="PD02">
+            <username>Heisenberg</username>
+            <lineaprod>
+                <idproducto>P04</idproducto>
+                <idproducto>P03</idproducto>
+            </lineaprod>
+            <fechaped>2022-05-05</fechaped>
+            <dirped>Ategorribarri Nº4, 3.B</dirped>
+            <importe>1000</importe>
+        </pedido>
+        <pedido idped="PD03">
+            <username>K_mello</username>
+            <lineaprod>
+                <idproducto>P02</idproducto>
+            </lineaprod>
+            <fechaped>2022-04-10</fechaped>
+            <dirped>Tartanga Kalea, 15, 48950 Erandio, Bizkaia</dirped>
+            <importe>500</importe>
         </pedido>
     </pedidos>
     

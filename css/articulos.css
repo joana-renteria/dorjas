@@ -100,6 +100,11 @@ div.head{
 	font-family: Segoe ui;
 	width: 80%;
 }
+/* Esto para que el login en el header se mueva a la derecha */
+div li.derecha{
+    margin-top: 10px;
+    float: right;
+}
 
 /*---ARTICLE---*/
 /* Le damos estilo al article en general */
@@ -114,6 +119,16 @@ article div.cont1 {
 	align-content: space-between;
 	padding: 0.5vw;
 	justify-content: center;
+}
+article div.none {
+        margin: 0 auto;
+        align-content: space-between;
+        width: 30%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        padding-top: 177.5px;
+        padding-bottom: 177.5px;
 }
 /* Le damos estilo a las imagenes del article */
 article img{
