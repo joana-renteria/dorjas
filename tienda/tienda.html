@@ -11,50 +11,35 @@
 </head>
 
 <body>
-	<header>
-		<!-- Aqui creamos un div que va a hacer de contenedor de todo el contenido del header -->
-		<div class="cont">
-			<!-- Aqui ira todo lo que va a ser el menu del header -->
-			<div class="head">
-				<ul>
-					<li><a class="none" href="index.html"><img src="imgs/logo.jpg" width="140" alt="logo"></a></li>
-					<li class="dropdown"><a>Articulos</a>
-						<div class="dropdown-content">
-							<a href="index.html">Drogas</a>
-							<a href="articulos/cultura.html">Cultura</a>
-						</div>
-					</li>
-					<li><a href="articulos/QuienesSomos.html">Quienes somos</a></li>
-				</ul>
-			</div>
-			<!-- Por ultimo esto sera el buscador que hemos puesto en el header -->
-			<div class="right">
-				<input type="search" id="site-search" name="q">
-				<button>Search</button>
-			</div>
-		</div>
-	</header>
+        <header>
+            <!-- Aqui creamos un div que va a hacer de contenedor de todo el contenido del header -->
+            <div class="cont">
+                <!-- Aqui ira todo lo que va a ser el menu del header -->
+                <div class="head">
+                    <ul>
+                        <li><a class="none" href="../index.html"><img src="../imgs/logo.jpg" width="140" alt="logo"></a></li>
+                        <li class="dropdown"><a>Articulos</a>
+                            <div class="dropdown-content">
+                                <a href="../index.html">Drogas</a>
+                                <a href="../articulos/cultura.html">Cultura</a>
+                            </div>
+                        </li>
+                        <li><a href="../articulos/QuienesSomos.html">Quienes somos</a></li>
+                        <li><a href="tienda/tienda.html">Tienda</a></li>
+                        <li class="derecha"><a href="../tienda/login.html">Log In</a></li>
+                    </ul>
+                </div>
+                <!-- Por ultimo esto sera el buscador que hemos puesto en el header -->
+                <div class="right" >
+                    <input type="search" id="site-search" name="q">
+                    <button>Search</button>
+                </div>
+            </div>
+        </header>
 	<article>
 		<!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del article -->
 		<div class="cont">
-			<script>
-				function loadXML() {
-					if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-						xmlhttp = new XMLHttpRequest();
-					}
-					else {// code for IE6, IE5
-						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-					}
-					xmlhttp.onreadystatechange = leerXML;
-					xmlhttp.open("GET", "../xml/PericoYKetaXML.xml", true);
-					if (httpRequest.readyState === XMLHttpRequest.DONE) {
-						// Everything is good, the response was received.
-					} else {
-						// Not ready yet.
-					}
-
-				}
-			</script>
+			
 		</div>
 	</article>
 	<footer>
