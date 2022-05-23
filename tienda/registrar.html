@@ -37,19 +37,22 @@
         <article>
             <div class="none">
                 <!-- Formulario para registrar un nuevo usuario -->
-                <form>
+                <form action="../PHP/registro.php" method="GET">
                     <h1>REGISTER</h1>
                     <p>Introduce el nombre de usuario:</p>
-                    <input type="text" id="usuario"/> 
+                    <input type="text" name="usuario"/> 
                     <p>Introduce tu nickname (opcional):</p>
-                    <input type="text" id="nick"/>
+                    <input type="text" name="nick"/>
                     <p>Introduce tu e-mail:</p>
-                    <input type="text" id="email"/>
+                    <input type="text" name="email"/>
                     <p>Especifica tu contraseña:</p>
-                    <input type="password" id="password"/>
+                    <input type="password" name="password"/>
                     <br/>
                     <br/>
-                    <button>Registrarse</button>
+                    <input type="checkbox" name="premium">Premium
+                    <br/>
+                    <br/>
+                    <input type="submit" value="Registrarse"/>
                     <br/>
                     <br/>
                 </form>
