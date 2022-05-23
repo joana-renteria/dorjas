@@ -9,7 +9,7 @@
             <tipo><estimulante/></tipo>
             <stock>6</stock>
             <vendedor>jesus_se_mete_toda_46</vendedor>
-            <imagen>"../imgs/Cocaina.jpg"</imagen>
+            <imagen>../imgs/Cocaina.jpg</imagen>
         </producto>
         <producto idproducto = "P02">
             <nombre>Los Diamantes de Heisenberg</nombre>
@@ -17,7 +17,7 @@
             <tipo><estimulante/></tipo>
             <stock>12</stock>
             <vendedor>Heisenberg</vendedor>
-            <imagen>"../img/metanfetamina.jpg"</imagen>
+            <imagen>../imgs/metanfetamina.jpg</imagen>
         </producto>
         <producto idproducto = "P03">
             <nombre>Especial K</nombre>
@@ -25,7 +25,7 @@
             <tipo><sedante/></tipo>
             <stock>10</stock>
             <vendedor>K_mello</vendedor>
-            <imagen>"../img/Ketamina.jpg"</imagen>
+            <imagen>../imgs/Ketamina.jpg</imagen>
         </producto>
         <producto idproducto = "P04">
             <nombre>Simplemente Codeina</nombre>
@@ -33,7 +33,7 @@
             <tipo><sedante/></tipo>
             <stock>13</stock>
             <vendedor>LaTosMeDespiertaCadaRato</vendedor>
-            <imagen>"../img/codeina.jpg"</imagen>
+            <imagen>../imgs/codeina.jpg</imagen>
         </producto>
     </productos>
     
