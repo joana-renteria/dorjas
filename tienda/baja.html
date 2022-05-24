@@ -9,8 +9,8 @@
     <link rel="shortcut icon" href="../imgs/logo.jpg">
     <script>
         function confirmar() {
-            if (confirm("Quieres registrate?")) {
-                document.form.action = "../PHP/registro.php";
+            if (confirm("Quieres dar de baja?")) {
+                document.form.action = "../PHP/baja.php";
                 document.form.method = "GET";
                 document.form.submit();
             }
@@ -49,23 +49,13 @@
 
     <article>
         <div class="none">
-            <!-- Formulario para registrar un nuevo usuario -->
+            <!-- Formulario para dar de baja un usuario -->
             <form name="form">
-                <h1>REGISTER</h1>
+                <h1>BAJA</h1>
                 <p>Introduce el nombre de usuario:</p>
                 <input type="text" name="usuario" />
-                <p>Introduce tu nickname (opcional):</p>
-                <input type="text" name="nick" />
-                <p>Introduce tu e-mail:</p>
-                <input type="text" name="email" />
-                <p>Especifica tu contrase�a:</p>
-                <input type="password" name="password" />
                 <br/>
-                <br/>
-                <input type="checkbox" name="premium">Premium
-                <br/>
-                <br/>
-                <input type="submit" onclick="confirmar()" value="Registrarse" />
+                <input type="submit" onclick="confirmar()" value="baja" />
                 <br/>
                 <br/>
             </form>

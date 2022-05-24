@@ -39,6 +39,15 @@
 	<article>
 		<!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del article -->
 		<div class="cont">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            
 			<?php
 			
 			$xml = new DOMDocument;
@@ -47,7 +56,7 @@
 			
 			$xsl = new DOMDocument;
 			
-			$xsl->load('../transformaciones/productos.xsl');
+			$xsl->load('../transformaciones/usuario.xsl');
 			
 			$proc = new XSLTProcessor;
 			
@@ -56,6 +65,17 @@
 			echo $proc->transformToXML($xml);
 			
 			?>
+            
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 		</div>
 	</article>
 	<footer>

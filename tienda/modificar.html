@@ -2,15 +2,15 @@
 <html>
 
 <head>
-    <title>Registro</title>
+    <title>Log In</title>
     <link rel="stylesheet" type="text/css" href="../css/estilos.css" />
     <meta charset="windows-1252">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imgs/logo.jpg">
     <script>
         function confirmar() {
-            if (confirm("Quieres registrate?")) {
-                document.form.action = "../PHP/registro.php";
+            if (confirm("Quieres modificarlo?")) {
+                document.form.action = "../PHP/modificar.php";
                 document.form.method = "GET";
                 document.form.submit();
             }
@@ -46,32 +46,22 @@
             </div>
         </div>
     </header>
-
     <article>
         <div class="none">
-            <!-- Formulario para registrar un nuevo usuario -->
             <form name="form">
                 <h1>REGISTER</h1>
                 <p>Introduce el nombre de usuario:</p>
                 <input type="text" name="usuario" />
-                <p>Introduce tu nickname (opcional):</p>
-                <input type="text" name="nick" />
-                <p>Introduce tu e-mail:</p>
-                <input type="text" name="email" />
-                <p>Especifica tu contrase�a:</p>
-                <input type="password" name="password" />
                 <br/>
+                <p>Introduce la nueva contraseña</p>
+                <input type="password" name="pass" />
                 <br/>
-                <input type="checkbox" name="premium">Premium
-                <br/>
-                <br/>
-                <input type="submit" onclick="confirmar()" value="Registrarse" />
+                <input type="submit" onclick="confirmar()" value="modificar" />
                 <br/>
                 <br/>
             </form>
         </div>
     </article>
-
     <footer>
         <!-- Aqui de nuevo creamos un div que va a hacer de contenedor de todo el contenido del footer -->
         <div class="cont">
