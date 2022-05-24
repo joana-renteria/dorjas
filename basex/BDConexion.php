@@ -163,4 +163,5 @@ class Query {
         return $s;
     }
 }
+
 ?>
